@@ -11,8 +11,19 @@ $(document).ready(function () {
     //we can set the background color and color 
     // $('a').css({ "color": "white", "background-color": "green", "font-weight": 600 })
 
-    $('#login').click(function abc() {
-        alert("welcome")
-    })
+    $('#login').click(function () {
+        var uname = $("#username").val()
+        var pwd = $("#password").val()
+        if (uname == " ") {
+            alert("please enter the username")
+        }
+        else if (pwd == " ") {
+            alert("please enter the password")
+        }
+        else {
+            alert("welcome")
 
+        }
+    })
 })
+
