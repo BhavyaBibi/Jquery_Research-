@@ -10,9 +10,9 @@ $(document).ready(function () {
 
     //we can set the background color and color 
     // $('a').css({ "color": "white", "background-color": "green", "font-weight": 600 })
-    function abc() {
+
+    $('#login').click(function abc() {
         alert("welcome")
-    }
-    $('login').click('abc')
+    })
 
 })
