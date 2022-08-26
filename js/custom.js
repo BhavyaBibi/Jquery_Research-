@@ -26,9 +26,9 @@
 //         }
 //     })
 // })
-var x;
+// var x;
 
-$(document).ready(function () {
+// $(document).ready(function () {
     // $("#txt").keypress(function () {
     //     console.log("keypressed")
     // })
@@ -41,9 +41,16 @@ $(document).ready(function () {
     //     console.log("keymoved")
     // })
 
-    $("#txt").click(function (e) {
-        x = e;
-        console.log(x)
-    })
+//     $("#txt").click(function (e) {
+//         x = e;
+//         console.log(x)
+//     })
 
+// })
+
+$(document).ready(function(){
+    $(document).keypress(function(e){
+        console.log(e.key)
+
+    })
 })
