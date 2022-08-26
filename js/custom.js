@@ -26,9 +26,24 @@
 //         }
 //     })
 // })
+var x;
 
 $(document).ready(function () {
-    $("#txt").keypress(function () {
-        console.log("keypressed")
+    // $("#txt").keypress(function () {
+    //     console.log("keypressed")
+    // })
+
+    // $("#txt").keydown(function () {
+    //     console.log("keypressed")
+    // })
+
+    // $("#txt").mousedown(function(){
+    //     console.log("keymoved")
+    // })
+
+    $("#txt").click(function (e) {
+        x = e;
+        console.log(x)
     })
+
 })
