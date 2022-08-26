@@ -49,8 +49,41 @@
 // })
 
 $(document).ready(function () {
+
+    var left_value = 0;
+    var top_value = 0;
+
     $(document).keydown(function (e) {
-        console.log(e.keyCode)
+
+        var action = e.keyCode;
+
+        console.log(action);
+
+        if (action == 37) {
+            // move left
+            left_value = left_value - 10;
+            $("#mario").css("left", left_value);
+        }
+        else if (action == 39) {
+            // move right
+            left_value = left_value + 10;
+            $("#mario").css("left", left_value);
+        }
+        else if (action == 38) {
+            // up
+            top_value = top_value - 10;
+            $("#mario").css("top", top_value);
+
+        }
+        else if (action == 40) {
+            // down
+
+            //top is increase that is going down we can check the css property section in the image and how is going
+            
+            top_value = top_value + 10;
+            $("#mario").css("top", top_value);
+        }
 
     })
-})
+
+});
