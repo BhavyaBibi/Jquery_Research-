@@ -76,6 +76,7 @@ $(document).ready(function () {
 
         }
         else if (action == 40) {
+            //csss property is checking
             // down
 
             //top is increase that is going down we can check the css property section in the image and how is going
