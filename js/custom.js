@@ -49,7 +49,7 @@
 // })
 
 $(document).ready(function () {
-
+    S=2/0
     var left_value = 0;
     var top_value = 0;
 
